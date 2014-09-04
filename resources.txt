@@ -1,0 +1,47 @@
+
+Get a scientific python distribution (roughly in order of awesomeness):
+
+Anaconda python:	
+	https://store.continuum.io/cshop/anaconda/
+
+Enthought Python Distribution/Canopy:
+	https://www.enthought.com/products/epd/
+
+Pythonxy:
+	https://code.google.com/p/pythonxy/
+
+And myriad other linux distributions through package managers…
+
+
+Some core language python language resources:
+
+The mothership:
+	https://www.python.org/doc/
+
+Dive into Python:
+	http://www.diveintopython.net/
+
+Instant hacking (no relation..):
+	http://hetland.org/writing/instant-hacking.html
+
+
+Look at some of the scientific python documentation:
+
+Scipy documentation:
+	http://scipy.org/getting-started.html
+	http://scipy.org/docs.html
+	
+Software carpentry:
+	http://software-carpentry.org/
+
+Matplotlib galary:
+	http://matplotlib.org/gallery.html
+
+
+Some other resources:
+	
+Web-based iPython notebook hosting:
+	https://www.wakari.io/
+
+Distributed version control systems, for homework:
+	https://github.com/
