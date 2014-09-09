@@ -1,6 +1,6 @@
 
 Homework 1:
-
+Due September 23, 2014
 
 1.  Write a function to return a list of N Fibonacci numbers.
     http://en.wikipedia.org/wiki/Fibonacci_number
