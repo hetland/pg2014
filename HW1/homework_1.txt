@@ -1,0 +1,49 @@
+
+Homework 1:
+
+
+1.  Write a function to return a list of N Fibonacci numbers.
+    http://en.wikipedia.org/wiki/Fibonacci_number
+
+>>> fib(1)
+[1, ]
+
+>>> fib(2)
+[1, 1]
+
+>>> fib(6)
+[1, 1, 2, 3, 5, 8]
+
+
+
+
+2.  Write a function to compute the integral of a list of numbers [f_n(x_n)] using the trapezoidal rule with a default value of dx=1.0
+    http://en.wikipedia.org/wiki/Trapezoidal_rule
+
+>>> f = [1.0, 3.0, 4.0, 5.0]
+>>> integrate(f)
+10.0
+
+>>> integrate(f, dx=0.5)
+5.0
+
+
+3.  Write a function to read the data from the file discharge.dat, return a list of dates (as datetime objects) and discharge (ignoring any flags).
+
+
+ADVANCED QUESTIONS:
+
+4.  Write a function to read data from the file drifter.dat.  Return a dictionary based on the track name as indices, returning a list of lat/lon pairs:
+
+EG.  
+
+Track	FRODO		00:00:00	776 ft	0 mph	
+
+starts the segment of the data for track 'FRODO'.  Then, the data are stored as:
+
+>>> tracks = read_drifter('drifter.dat')
+>>> tracks['FRODO']
+[(43.3232, 121.3132), 
+...
+(43.1313, 121.4546)]
+
