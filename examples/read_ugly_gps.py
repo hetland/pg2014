@@ -28,8 +28,6 @@ def read_ugly_gps(filename):
     return times, longitudes, latitudes
 
 
-print __name__
-
 if __name__ == '__main__':
     filename =  'ugly_gps_data1.dat'
     time, lon, lat = read_ugly_gps(filename)
