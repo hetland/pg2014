@@ -1,43 +1,51 @@
+Homework 2 Due October 14, 2014
 
-Homework 2
-Due October 14, 2014
- 
+1. Given an two arrays of points (each with shape = (N, 2)) where the columns are x and y,
+respectively, write a function that returns an NxN matrix that defines the distance between
+each of the points in one array to each of the points in the other array.
 
-1.  Given an two arrays of points (each with shape = (N, 2)) where the columns are x and y, respectively, write a function that returns an NxN matrix that defines the distance between each of the points in one array to each of the points in the other array.
+2. Use the point class described in class
 
+ https://github.com/hetland/pg2014/blob/master/examples/point_example.py
 
-2.  Use the point class described in class 
+ as a basis. Add a method that rotates the point clockwise by a specified number of radians
+about another optional point, defaulting to the origin.
 
-        https://github.com/hetland/pg2014/blob/master/examples/point_example.py
+3. Create a 'high-pass' filter function that removes a trend from a given series of points
+using a polynomial fit of order N (specified as a functional input, default is N=1 for a
+linear fit). The function returns the difference between the given series and the polynomial
+fit.
 
-    as a basis.  Add a method that rotates the point clockwise by a specified number of radians about another optional point, defaulting to the origin.
-    
+4. Create a class to read discharge data for the Brazos river from this page:
+http://waterdata.usgs.gov/nwis/dv?cb_00060=on&format=rdb&site_no=08116650&referred_module=sw&p
+eriod=&begin_date=1967-10-01&end_date=2014-10-01
 
-3. Create a 'high-pass' filter function that removes a trend from a given series of points using a polynomial fit of order N (specified as a functional input, default is N=1 for a linear fit).  The function returns the difference between the given series and the polynomial fit.
-
-
-4.  Create a class to read discharge data for the Brazos river from this page:
- http://waterdata.usgs.gov/nwis/dv?cb_00060=on&format=rdb&site_no=08116650&referred_module=sw&period=&begin_date=1967-10-01&end_date=2014-10-01
- 
-Store date (as an array of datetime objects) and discharge data (an array of floating point numbers, converted to cubic meters per second) as attributes within the class.  
+Store date (as an array of datetime objects) and discharge data (an array of floating point
+numbers, converted to cubic meters per second) as attributes within the class.
 
 Create methods to:
 
-    - Extract a year of discharge data.  Return dates and discharges for the specified year.
-    - Calculate annual mean discharge.  Return an array of years and mean discharges.
-    - Plot the hydrograph over the entire length of the timeseries.
+ - Extract a year of discharge data. Return dates and discharges for the specified year. -
+Calculate annual mean discharge. Return an array of years and mean discharges. - Plot the
+hydrograph over the entire length of the timeseries.
 
-5.  Write a function to read the topography/bathymetry of the world using the ETOPO1 ice surface dataset:
+5. Write a function to read the topography/bathymetry of the world using the ETOPO1 ice
+surface dataset:
 
-http://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/ice_surface/grid_registered/xyz/ETOPO1_Ice_g_int.xyz.gz
+http://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/ice_surface/grid_registered/xyz/ETOPO1_
+Ice_g_int.xyz.gz
 
-and return three arrays representing x, y, and z. Write a script using this function to make a pcolormesh map of the topo/bathy, and overlay the contours z = [-1000, 0, 1000].  The negative contour should be thin and dashed, the 0 contour thick and solid, and the 1000 contour thin and solid.
-
-
+and return three arrays representing x, y, and z. Write a script using this function to make
+a pcolormesh map of the topo/bathy, and overlay the contours z = [-1000, 0, 1000]. The
+negative contour should be thin and dashed, the 0 contour thick and solid, and the 1000
+contour thin and solid.
 
 ADVANCED QUESTION
 
-6.  Continue with the class created in question 4, adding the following methods:
+6. Continue with the class created in question 4, adding the following methods:
 
-    - Get a mean annual timeseries.  Return the mean annual hydrograph with dates given for some arbitrary (specified) year.
-    - Create a plot of a given year with mean discharge and variability.  Plot the given year as a red line.  Plot the annual mean hydrograph as a black line.  Plot a grey shaded region around the black line representing one standard deviation about the mean (use the plt.fill() command for this).
+ - Get a mean annual timeseries. Return the mean annual hydrograph with dates given for some
+arbitrary (specified) year. - Create a plot of a given year with mean discharge and
+variability. Plot the given year as a red line. Plot the annual mean hydrograph as a black
+line. Plot a grey shaded region around the black line representing one standard deviation
+about the mean (use the plt.fill() command for this).
