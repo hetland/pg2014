@@ -1,3 +1,6 @@
+
+Homework 2
+Due October 14, 2014
  
 
 1.  Given an two arrays of points (each with shape = (N, 2)) where the columns are x and y, respectively, write a function that returns an NxN matrix that defines the distance between each of the points in one array to each of the points in the other array.
