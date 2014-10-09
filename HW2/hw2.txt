@@ -29,10 +29,9 @@ Create methods to:
  - Extract a year of discharge data. Return dates and discharges for the specified year. 
  - Plot the hydrograph over the entire length of the timeseries.
 
-5. Write a function to read the topography/bathymetry of the world using the ETOPO1 ice
-surface dataset:
+5. Write a function to read the topography/bathymetry of the world using the ETOPO5 surface dataset:
 
-http://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/ice_surface/grid_registered/xyz/ETOPO1_Ice_g_int.xyz.gz
+http://www.nio.org/userfiles/file/datainfo/global_merged5.txt
 
 and return three arrays representing x, y, and z. Write a script using this function to make
 a pcolormesh map of the topo/bathy, and overlay the contours z = [-1000, 0, 1000]. The
