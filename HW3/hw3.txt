@@ -5,9 +5,13 @@ We will solve the simple 1D wave equation, written numerically as
         u[1:-1] = u[1:-1] - (dt*g/dx)*(eta[1:]-eta[:-1])
         eta = eta - (dt*H/dx)*(u[1:]-u[:-1])
 
-Given some distribution of eta (representing the water surface in a 1D channel), and u=0 everywhere, propagate this system forward by running the above sequence iteratively.
+Given some distribution of eta (representing the water surface in a 1D channel), and u=0 everywhere,
+propagate this system forward by running the above sequence iteratively.
 
-Create a class for this model. You will need to initialize your model with some eta distribution and values for the constants (reasonable choices are dx=100.0, dt=5.0, g=9.8, H=10.0). You will need to store the model state within the class. Also, there should be a method for stepping the model forward in time.
+Create a class for this model. You will need to initialize your model with some eta distribution and
+values for the constants (reasonable choices are dx=100.0, dt=5.0, g=9.8, H=10.0). You will need to store
+the model state within the class. Also, there should be a method for stepping the model forward in time.
 
-The class can be designed in many different ways, but your primary objective should be to create something that is easy to use, lightweight, and flexible. You will use this code for future visualization projects.
+The class can be designed in many different ways, but your primary objective should be to create something
+that is easy to use, lightweight, and flexible. You will use this code for future visualization projects.
 
